@@ -3,7 +3,7 @@ export default function MainQuest(props){
         <section className="quest">
             <article className="numberQuest"> 
                 <h2>Pergunta {props.num}:</h2>
-                <img  className="play" src="./assets/images/play.svg" alt="Play"/>
+                <img  className="play" src="../assets/images/play.svg" alt="Play"/>
             </article>
             <article id="display" className="questMid">
                 <article id="display" className="question">
