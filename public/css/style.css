@@ -1,9 +1,11 @@
+
 body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgb(251,107,107);
     background: radial-gradient(circle, rgba(251,107,107,1) 0%, rgb(196, 70, 95) 100%);
     border: 1px solid #DBDBDB;
+    border-bottom: 0px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,6 +14,7 @@ body{
 }
 .root{
     width: 80%;
+    height: 100%;
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -44,7 +47,7 @@ header .descHeader, aside figcaption{
 
 aside{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -54,7 +57,7 @@ aside{
     animation: zoomIn 1s;
 }
 .logoAside{
-    margin-top: 40px;
+    margin-top: 150%;
     width: 144px;
     height: 170px;
 }
@@ -102,13 +105,15 @@ aside{
     padding-left: 10px;
 }
 main{
+    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 140px;
+    padding-bottom: 160px;
 }
 main .quest{
     display: inline-flex;
