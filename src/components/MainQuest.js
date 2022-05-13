@@ -1,9 +1,11 @@
+import Play from "../assets/images/play.svg"
+
 export default function MainQuest(props){
     return(
         <section className="quest">
             <article className="numberQuest"> 
                 <h2>Pergunta {props.num}:</h2>
-                <img  className="play" src="../assets/images/play.svg" alt="Play"/>
+                <img  className="play" src={Play} alt="Play"/>
             </article>
             <article id="display" className="questMid">
                 <article id="display" className="question">
