@@ -108,9 +108,9 @@ datalist{
     margin-bottom: 30px;
 }
 main{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 74%;
+    margin-left: 13%;
+    margin-right: 13%;
     height: fit-content;
     display: flex;
     flex-direction: column;
