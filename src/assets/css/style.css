@@ -1,4 +1,7 @@
-
+html{
+    width: 100vw;
+    height: 100vh;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -15,14 +18,14 @@ body{
 .root{
     width: 80%;
     height: 100%;
-    margin-right: 10%;
-    margin-left: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 header{
     margin-top: 40px;
     width: 100%;
     height: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -57,7 +60,7 @@ aside{
     animation: zoomIn 1s;
 }
 .logoAside{
-    margin-top: 150%;
+    margin-top: 110%;
     width: 144px;
     height: 170px;
 }
@@ -101,6 +104,9 @@ aside{
     opacity: 0.9;
     border: none;
 }
+datalist{
+    background-color: #D70900;
+}
 .inputZaps::placeholder, .inputDeck::placeholder{
     padding-left: 10px;
 }
@@ -113,7 +119,7 @@ main{
     align-content: center;
     align-items: center;
     justify-content: flex-start;
-    padding-bottom: 160px;
+    padding-bottom: 170px;
 }
 main .quest{
     display: inline-flex;
@@ -129,6 +135,7 @@ main .quest{
     margin-left: 10%;
     margin-right: 10%;
     animation: flipInX 1s;
+    border-radius: 5px;
 }
 .numberQuest{
     display: flex;
@@ -140,6 +147,7 @@ main .quest{
     flex-direction: row;
     flex-wrap: wrap;
     background: #FFFFFF;
+    border-radius: 5px;
 }
 .question{
     font-family: 'Recursive';
@@ -176,6 +184,7 @@ main .quest{
     min-width: 280px;
     max-height: 120px;
     min-height: 46px;
+    border-radius: 5px;
 }
 .questLate{
     max-width: 500px;
@@ -185,6 +194,7 @@ main .quest{
     height: 120px;
     min-height: 76px;
     animation: jackInTheBox 1s;
+    border-radius: 5px;
 }
 .options{
     position: relative;
@@ -194,6 +204,7 @@ main .quest{
     align-content: center;
     align-items: center;
     justify-content: space-around;
+    border-radius: 5px;
 }
 h6{
     margin-top: 10px;
@@ -228,7 +239,7 @@ h6{
 }
 footer{
     text-align: center;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     background: #FFFFFF;
     box-shadow: 3px -10px 6px rgba(0, 0, 0, 0.05);
@@ -329,4 +340,10 @@ ion-icon[name="refresh"]{
 }
 #display{
     display: none;
+}
+*, *:before, *::after{
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+	word-wrap: break-word;
+	word-break: break-all;
 }

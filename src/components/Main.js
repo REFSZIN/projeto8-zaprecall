@@ -4,7 +4,7 @@ import { quests } from "../data/indexdata";
 
 export default function Main (){
     return(
-        <main id="display" >
+        <main>
             {quests.map((item, index) => <MainQuest key={index} num={item.num} questao={item.questao} resposta={item.resposta} />)}
         </main>
     );

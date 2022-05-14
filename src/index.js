@@ -1,20 +1,19 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
-import  ReactDOM from "react-dom";
-import Header from "./components/Header";
+import ReactDOM from "react-dom";
+import Play from "./components/Play";
 import Aside from "./components/Aside";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
-import "./css/reset.css"
-import "./css/style.css"
+import "./assets/css/reset.css"
+import "./assets/css/style.css"
+
 function App (){
     return (
-        <>
-            <Header />
-            <Aside />
-            <Main />
-            <Footer />
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Aside />} />
+                <Route path="/play" element={<Play />} />
+            </Routes> 
+        </BrowserRouter>
     );
 };
 

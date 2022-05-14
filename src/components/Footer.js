@@ -4,7 +4,7 @@ import FooterResult from "./FooterResult";
 
 export default function Footer(){
     return (
-        <footer  id="display" >
+        <footer>
             <FooterResult />
             <FooterFollowUp />
             <button  className="btnreload">REINICIAR RECALL</button>

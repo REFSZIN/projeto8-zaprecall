@@ -1,7 +1,7 @@
 import React from "react";
 export default function Header () {
     return (
-        <header  id="display" >
+        <header>
             <figure>
                 <img className="logoHeader" src="../assets/images/logo.png" alt="logo"/>
             </figure>
