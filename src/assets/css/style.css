@@ -15,8 +15,6 @@ body{
 .root{
     width: 80%;
     height: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
 }
 header{
     margin-top: 40px;
@@ -110,7 +108,9 @@ datalist{
     margin-bottom: 30px;
 }
 main{
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -121,11 +121,12 @@ main{
     padding-bottom: 170px;
 }
 main .quest{
+    max-width: 90%;
+    min-width: 90%;
     display: inline-flex;
     justify-content: space-between;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgb(0 0 0 / 15%);
-    border-radius: 5px;
     margin-bottom: 16px;
     flex-direction: column;
     align-items: center;
@@ -137,6 +138,8 @@ main .quest{
     border-radius: 5px;
 }
 .numberQuest{
+    max-width: 100%;
+    min-width: 70%;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -149,14 +152,14 @@ main .quest{
     border-radius: 5px;
 }
 .question{
+    max-width: 100%;
+    min-width: 100%;
     font-family: 'Recursive';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #333333;
-    width: 100%;
-    height: 66px;
     display: inline-flex;
     max-height: 120px;
     min-height: 66px;
@@ -169,25 +172,25 @@ main .quest{
     border-radius: 5px;
     animation: fadeIn 1s;
 }
-.questMid{
-    margin-top: 2px;
-    margin-left: 2px;
-    background: #FFFFD5;
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-}
 .questMid, .numberQuest{
-    width: 100%;
-    height: fit-content;
     max-width: 500.12px;
-    min-width: 280px;
+    min-width: 100%;   
     max-height: 120px;
     min-height: 46px;
     border-radius: 5px;
 }
+.questMid{
+    max-width: 100%;
+    min-width: 100%;
+    padding-top: 2px;
+    padding-left: 2px;
+    background: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
 .questLate{
     max-width: 500px;
-    min-width: 280px;
+    min-width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     height: 120px;
@@ -318,6 +321,9 @@ h3{
 .result h4{
     width: 150px;
 }
+h5{
+    margin: 4px;
+}
 ion-icon[name="checkmark-circle"]{
     color: green;
 }
@@ -333,12 +339,21 @@ ion-icon[name="refresh"]{
 ion-icon[name="refresh"]{
     width: 10%;
     margin-left: 90%;
+    margin-bottom: 4px;
+    cursor: pointer;
 }
 .play, button{
     cursor: pointer;
 }
 #display{
     display: none;
+}
+@media (max-width: 935px) {
+    main {
+        width: 95%;
+        margin-left: 5%;
+    }
+
 }
 *, *:before, *::after{
     box-sizing: border-box;
