@@ -1,7 +1,4 @@
-html{
-    width: 100vw;
-    height: 100vh;
-}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -81,7 +78,6 @@ aside{
     line-height: 22px;
     text-align: center;
     color: #D70900;
-    margin-top: 30px;
     width: 246px;
     height: 54px;
     background: #FFFFFF;
@@ -109,6 +105,9 @@ datalist{
 }
 .inputZaps::placeholder, .inputDeck::placeholder{
     padding-left: 10px;
+}
+.inputDeck{
+    margin-bottom: 30px;
 }
 main{
     width: 100%;
