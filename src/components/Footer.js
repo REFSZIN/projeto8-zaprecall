@@ -7,13 +7,13 @@ export default function Footer(props){
     const { corretas, erradas, medianas, totalQuests , icons } = props;
     const soma = corretas + erradas + medianas;
     const reload = () =>{
-        window.reload(true)
+        window.location.reload(false)
     }
     return (
         <footer>
             <FooterResult erradas={erradas} soma={soma} totalQuests={totalQuests}/>
             <FooterFollowUp soma={soma} totalQuests={totalQuests} icons={icons}/>
-            <Link to={"/"}><button  className="btnreload" onClick={() => reload()}>REINICIAR RECALL</button></Link>
+            {soma ===  totalQuests? ( <Link to={"/"}><button onClick={() => reload()} className="btnreload" >REINICIAR RECALL</button></Link>) : ('')}
         </footer>
     );
 };

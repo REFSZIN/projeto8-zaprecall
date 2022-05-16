@@ -37,8 +37,8 @@ export default function MainQuest(props){
             <div className="questLate">
                 <h6>{props.resposta}</h6>
                 <article className="options">
-                    <button onClick={() => click('close-circle')} className="btnQuestRed">Não lembrei</button>
-                    <button onClick={() => click('help-circle')} className="btnQuestOrange">Quase não <br></br>lembrei</button>
+                    <button onClick={() => click('close-circle')} className="btnQuestRed">Não <br/> lembrei</button>
+                    <button onClick={() => click('help-circle')} className="btnQuestOrange">Quase não <br/>lembrei</button>
                     <button onClick={() => click('checkmark-circle')} className="btnQuestGreen">Zap!</button>
                 </article>
             </div>

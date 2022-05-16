@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Header () {
     return (
         <header>
-            <figure>
+            <Link to={"/"}><figure>
                 <img className="logoHeader" src="../assets/images/logo.png" alt="logo"/>
-            </figure>
-            <figcaption className="descHeader">ZapRecall</figcaption>
+            </figure></Link>
+            <Link to={"/"}><figcaption className="descHeader">ZapRecall</figcaption></Link>
         </header>
     );
 };

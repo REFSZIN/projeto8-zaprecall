@@ -23,6 +23,7 @@ export default function FooterResult (props){
                         </figure>
                         <h4>Você esqueceu de <br/>algum flashcard!</h4>
                         </>
+                        
                     )
                 }
             </section>
