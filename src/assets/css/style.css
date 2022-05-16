@@ -338,6 +338,7 @@ ion-icon[name="refresh"]{
 }
 ion-icon[name="refresh"]{
     position: absolute;
+    right: -18px;
     width: 10%;
     bottom: 10px;
     cursor: pointer;
