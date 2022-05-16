@@ -1,13 +1,15 @@
 import React from 'react';
-export default function FooterFollowUp (){
+export default function FooterFollowUp (props){
+    const { soma, totalQuests, icons } = props;
+    
+
     return(
         <section className="followUp">
-            <h3>0/4 CONCLUÍDOS</h3>
+            <h3>{soma}/{totalQuests} CONCLUÍDOS</h3>
             <article className="iconsMarkHist">
-                <ion-icon name="checkmark-circle"></ion-icon>
-                <ion-icon name="close-circle"></ion-icon>
-                <ion-icon name="close-circle"></ion-icon>
-                <ion-icon name="help-circle"></ion-icon>
+                {
+                    icons.map((icon, index) => (<ion-icon key={index} name={icon}></ion-icon>))
+                }
             </article>
         </section>
     );
