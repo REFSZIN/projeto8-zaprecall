@@ -3,9 +3,11 @@ export default function MainQuest(props){
     const [first,setFirst] = useState(false);
     const [second,setSecond] = useState(false);
     const [ clicked, setClicked ] = useState(false);
+    const [ thisIcon, setThisIcon ] = useState("");
     const {
-        corretas, erradas, medianas, setCorretas, setErradas, setMedianas , setIcons, icons
+        corretas, erradas, medianas, setCorretas, setErradas, setMedianas , setIcons, icons, key
     } = props;
+    console.log(key)
 
     const click = (type) => {
         setFirst(false);
@@ -13,21 +15,24 @@ export default function MainQuest(props){
         if(type === 'close-circle') {
             setErradas(erradas+1);
             setIcons([...icons , "close-circle"])
+            setThisIcon("close-circle")
         };
         if(type === 'help-circle') {
             setMedianas(medianas+1);
             setIcons([...icons , "help-circle"])
+            setThisIcon("help-circle")
         }
         if(type === 'checkmark-circle') {
             setCorretas(corretas+1)
             setIcons([...icons , "checkmark-circle"])
+            setThisIcon("checkmark-circle")
         }
     };
     const outlineColor = () => {
-        if(icons[props.num-1] === "checkmark-circle"){
+        if(thisIcon === "checkmark-circle"){
             return <h2 className='clickedcorret'>Pergunta {props.num}</h2>
-        }if(icons[props.num-1] === "help-circle"){
-             return <h2 className='clickedmaybe'>Pergunta {props.num}</h2>
+        }if(thisIcon === "help-circle"){
+            return <h2 className='clickedmaybe'>Pergunta {props.num}</h2>
         }else{
             return <h2 className='clickedrong'>Pergunta {props.num}</h2>
         }
@@ -78,7 +83,7 @@ export default function MainQuest(props){
                         : (
                             <>
                                 {outlineColor()}
-                                <ion-icon name={icons[props.num-1]}></ion-icon>
+                                <ion-icon name={thisIcon}></ion-icon>
                             </>
                         )
                     }
